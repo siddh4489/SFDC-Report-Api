@@ -1,0 +1,40 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+    <bean id="hrprocBean"
+          class="com.espl.loader.LoaderBean"
+          singleton="false">
+        <description>HR process Loader Bean</description>
+        <property name="restendpoint" value="/services/data"/>
+        <property name="apiversion" value="/v34.0"/>
+        <property name="grantservice" value="/services/oauth2/token?grant_type=password"/>
+        <property name="loginurl" value="https://login.salesforce.com"/>
+        <property name="username" value="hr.recruitment@eternussolutions.com"/>
+        <property name="password" value="espl@1234eoBBmA2fQtbK7eBwF9kBFysL"/>
+        <property name="clientsecret" value="1206033671837763468"/>
+        <property name="clientid" value="3MVG9ZL0ppGP5UrDSoK6QN0u7ftCi6CBAWZCH756UC2dFHCeXcYk1RqTw4tUrufJUyJCY.awKa.JXpMpUAl9l"/>
+        <property name="downloadpath" value="Resumes\\"/>
+        <property name="reportid" value="00O28000003KFgu"/>
+    </bean>
+    
+    <bean id="mailBean"
+          class="com.espl.loader.MailBean"
+          singleton="false">
+        <description>HR process Loader Bean</description>
+        <property name="username" value="siddhraj.atodaria@eternussolutions.com"/>
+        <property name="password" value="siddh@4489"/>
+        <property name="starttls" value="true"/>
+        <property name="auth" value="true"/>
+        <property name="host" value="mail.mailxf3.mithi.com"/>
+        <property name="port" value="587"/>
+        <property name="subject" value="Interview on 02th Nov @ Pune for System Executive - Eternus solutions‏"/>
+        <property name="body" value="You are invited to attend an Interview with Eternus Solutions 
+for the Role of System Executive on 02 th Nov 2015 Monday @ 9.00 AM at Pune. 
+Kindly attend the interview at the below mentioned venue"/>
+        <property name="skill" value="Skill Set: C/C++, Java or Salesforce is Preferred‏"/>
+        <property name="regards" value="ESPL Recruitment Team‏"/>
+      
+    </bean>
+    
+</beans>
+

@@ -1,0 +1,8 @@
+#Mapping values
+#Thu Oct 06 14:19:11 GMT+05:30 2011
+BATCH\ NUM=akritiv__Batch_Number__c
+SOURCE\ SYSTEM=akritiv__Source_System__c
+LOAD\ TYPE=akritiv__Load_Type__c
+RESULT=akritiv__Result__c
+ERROR=akritiv__Error__c
+RUN\ BATCH\ AGING=akritiv__Run_Batch_Aging__c
